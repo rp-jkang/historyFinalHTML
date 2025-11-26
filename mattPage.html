@@ -12,11 +12,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
+    <style>
+    h1 {
+    text-align: center;
+    }
+    h3 {
+  text-align: center;
+}
+</style>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
+        <h1>The Internet Grows Out of the Shell of the ARPANET</h1>
+        <h3>By Matthew Rakauskas</h3>
+        <h2>Expanding the Mission</h2>
+        <p>
+        After the success of the 1972 ICCC ARPANET demonstration, researchers at ARPA began to expand applications of packet switching networks, again mainly for military use. Robert Kahn, who helped organize the demonstration, spearheaded these efforts as a program manager of the IPTO. The two main forms of communication considered were radio and satellite. Researchers from the University of Hawai’i, led by Norman Abramson, were supported by the Navy and ARPA to wield the potential of radio. Their ALOHAnet solution was noted for its simplicity, and it inspired Robert Metcalfe of Harvard to improve upon it and create a cable version of the system called Ethernet. The development of a packet-switching system for satellite was motivated by the space race with the USSR, as well as the high bandwith and range offered by the new satellites. In the end, three networks were developed for three ways of sending packets over networks: PRNET (by radio), SATNAT (by satellite), and, of course, ARPANET (by wired telephone lines). Because of their many differences, these networks were not very compatible and difficult to connect. Thus, there was a new goal of connecting them together.<sup>1</sup>
+        </p>
+        <h2>Foundations</h2>
+        <p>
+        The massive undertaking of internetworking was spearheaded by Robert Kahn and Vinton Cerf. They needed to develop a universal protocol to bridge these networks. In 1973, Cerf proposed the Transmission Control Protocol (TCP) to provide “an orderly, error-free flow of data from host to host.”<sup>2</sup> Cerf and Kahn also introduced the idea of a “gateway,” which were special host computers that routed the traffic between networks.<sup>3</sup> The gateways had their own internetworking protocol (IP).<sup>4</sup> The two protocols are often referred to in tandem as TCP/IP. After years of development, these new protocols were finally ready to be tested in 1977. Experimenters from California sent data through PRNET to the ARPANET, which sent the data through it to the SATNAT on the East coast, which then sent it over to Europe, and back to California through the ARPANET.<sup>5</sup> This demonstration was the first triumph of the Internet, showing the effectiveness of TCP/IP.
+        <div style="text-align:center; line-height:1;">
+        <img src="multinetwork_diagram.gif" height=300 alt="Multinetwork demonstration"><br>
+        <sub>FIGURE 1.1. Multinetwork demonstration.<sup>10</sup></sub>
+    </div>
+        </p>
+        <h2>The Military Comes Through</h2>
+        <p>
+        Despite the success, TCP/IP was not immediately adopted everywhere. Military interests yet again bolstered networking innovation, this time promoting these Internet protocols. The Defense Communications Agency (DCA) had set up a new network, AUTODIN II, for strictly military purposes and desired to connect it with the ARPANET. Cerf and Kahn’s push for TCP eventually persuaded the Department of Defense to adopt it across all their networks.<sup>6</sup> ARPANET, by this point, was a mix of military and research operations, so the network was split into MILNET for military use and the ARPANET for researchers. Colonel Heidi Heiden from the DCA also pushed along the commercialization of the Internet. He funded computer manufacturers to implement TCP/IP on their devices, helping it become the standard for all Internet traffic.<sup>7</sup> Most people today do not associate the Internet with military research, as the system has become ubiquitous in daily, civilian life. The underlying technology of the Internet still used today, TCP/IP, was created out of necessity for the Department of Defense to stay ahead during the Cold War. Even the transition to civilian use was encouraged by people within the government either promoting experimental research or realizing its commercial potential. 
+        </p>
+        <h2>The People's Internet</h2>
+        <p>
+        Now we will venture into the World Wide Web, the system that exemplifies the public Internet. Created in 1989, the Web reaches beyond the needs of research in government labs or military personnel. The creator of the Web, Tim Berners-Lee, had a grand vision: “It is a vision that provides us with new freedom, and allows us to grow faster than we ever could when we were fettered by the hierarchical classification systems into which we bound ourselves. It leaves the entirety of our previous ways of working as just one tool among many. It leaves our previous fears for the future as one set among many. And it brings the workings of society closer to the workings of our minds.”<sup>8</sup> The Web was a paradigm shift in the computer networking world. It was not centralized like the ARPANET where one needed clearance to use it or to add nodes. Berners-Lee likened the Web to a market economy, where “anybody can trade with anybody, and they don’t have to go to a market square to do it.”<sup>9</sup> They do have to agree on some process to facilitate the trading. The Web, at its most fundamental level, uses universal resource identifiers (URIs), the Hypertext Transfer Protocol (HTTP), and the Hypertext Markup Language (HTML). A URI is an address of Web content, HTTP defines the process of information transfer between computers, and HTML is the common language.<sup>9</sup> The invention of the Web signifies a shift in the philosophy of the Internet. Berners-Lee did not only have researchers or the military in mind when creating it, though it no doubt sped up their work as well. He aimed for societal change where information was more accessible and prevalent. These ambitions far exceeded the original plans for the ARPANET decades before.
+        </p>
+        <h2>A Look Back on the Early Internet</h2>
+        <p>
+        When people think of the Internet, they are almost certainly thinking of the World Wide Web, but the Internet did not begin in 1989. Arguably, the Internet started twelve years earlier with the successful demonstration of TCP/IP across the ARPANET, PRNET, and SATNET. Others may argue that the genesis of the ARPANET deserves the honor. Regardless, since the beginning of the ARPANET, diverse parties shaped the Internet. The US military undoubtedly drove the project forward, but university researchers, visionaries like Licklider and Berners-Lee, and even commercial stakeholders had a hand in its design, too. This kind of melting pot has become even richer up to today, but at its core, the Internet has the same foundations laid decades ago.
+        </p>    
+        <hr style="margin-top:40px;">
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">1.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 114.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">2.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 127.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">3.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 128.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">4.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 130.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">5.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 131.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">6.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 139.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#abbate" target="_blank">7.</a> Abbate, Janet. <i>Inventing the Internet</i> (Cambridge, MA: MIT Press, 1999) 139.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#berners-lee" target="_blank">8.</a> Berners-Lee, Tim. <i>Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web</i> (New York, NY: Harper Business, 2000) 1.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#berners-lee" target="_blank">9.</a> Berners-Lee, Tim. <i>Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web</i> (New York, NY: Harper Business, 2000) 35.
+        </p>
+        <p id="footnote1">
+        <a href="worksCited.html#berners-lee" target="_blank">10.</a> "Internet History of 1970s," Computer History Museum, accessed November 25, 2025, <a href="https://www.computerhistory.org/internethistory/1970s" target="_blank">https://www.computerhistory.org/internethistory/1970s.
+        </p>
         <script src="" async defer></script>
     </body>
 </html>
