@@ -52,31 +52,77 @@
         Lickider worked for the government agency ARPA (hence the name ARPANET) and evetually became the first director
         of ARPA's Information Processing Techniques Office (IPTO). Another individual who joined the ARPA team to
         work on the ARPANET was Robert Taylor. He joined ARPA in 1965 and in 1966 he became the director
-        of IPTO. During his time working at ARPA he saw thateach mainframe or computer that IPTO was funding 
-        "had its own sense of community and was digitallyisolated from the other one<sub><a href="#footnote2">2</a> </sub>." 
-        As director he saw that "if ARPA's scattered computers could be linkedtogether, hardware, software, and 
-        data could be efficiently pooled among contractors rather than wastefully 
+        of IPTO. During his time working at ARPA he saw thateach mainframe or computer that IPTO was funding
+        "had its own sense of community and was digitallyisolated from the other one<sub><a href="#footnote2">2</a>
+        </sub>."
+        As director he saw that "if ARPA's scattered computers could be linkedtogether, hardware, software, and
+        data could be efficiently pooled among contractors rather than wastefully
         duplicated<sub><a href="#footnote2">2</a> </sub>."
     </p>
-        <div style="text-align:center; line-height:1;">
+    <div style="text-align:center; line-height:1;">
         <img src="MapOfMainframes.png" width="700" height="400" alt="PacketSwitching"><br>
         <sub><a href="#footnote3">3.</a> Map of ARPA research centers to be connected.</sub>
     </div>
     <p>
-        The director who actually oversaw the completion of the ARPANET was Lawrence Roberts a researcher from MIT 
-        who was strong armed with the threat of funding cuts from ARPA to join the 
-        project<sub><a href="#footnote4">3.</a></sub>. Roberts was the one to decide that the network would 
+        The director who actually oversaw the completion of the ARPANET was Lawrence Roberts a researcher from MIT
+        who was strong armed with the threat of funding cuts from ARPA to join the
+        project<sub><a href="#footnote4">4</a></sub>. Roberts was the one to decide that the network would
         be a distributed packet switching system like the one Paul Baran imagined for his communication network.
     </p>
-    <h2>Major Challenges</h2>
+    <h2 style="text-align: center;"> Major Challenges</h2>
+    <p>
+        When packet switching was introduced to this project it was very controversial because communication specialists
+        who worked on telephone lines knew how difficult it would be to do packet switching in this large of a system.
+        The experts thought that implementing packet switching would add too much to the complexity of the system.
+        Another
+        problem that arose was that the computers that were being connected were all different. This is challenging
+        because
+        each computer would have each had a different internal protocol in how they stored their data locally
+        <sub><a href="#footnote5">5</a></sub>. In speaking with researchers at Cambridge he realized there needed to be
+        a standard protocal for messages to be sent over the network to overcome the incompatibilities between different
+        computers.
+    </p>
+
+    <h2 style="text-align: center;"> Building the Network</h2>
+    <p>
+        The main challenge with the was getting the incompatibilities between the computers compatible. In addition
+        to adding protocols to the messages sent over the network Roberts decided there needed to be a interface
+        message processor (IMP) or minicomputer which handled the packets and was the interface between
+        the mainframe and the network <sub><a href="#footnote6">6</a></sub>. The IMP first had to break up the
+        messages into smaller parts and add a source and destination header. When the IMP on the other
+        end needed to strip the packet headers off and reassemble the packets before giving it to the
+        host computer. The IMPs that were transmitting the messages between endpoints sent the message
+        to the next IMP in and waits for a response that the packet was recieved. If the response is not
+        sent then a new packet is sent. Each IMP kept a table for each host on the network that held the information
+        of other IMPs and message travel time between them so that the IMP could determine the fastest route.
+    </p>
+
+    <h2 style="text-align: center;"></h2style> Public Test</h3>
+    <p>
+    The first major public demonstration of the ARPANET took place
+    at the International Conference on Computer Communications in 1972. During this event, researchers
+    showcased the network's unprecedented ability to link distant computers together in real time.
+    The demonstration involved connecting from Washington, D.C., to a computer at MIT,
+    which then remotely executed a program running at UCLA. The results were transmitted back to
+    Washington to be printed, proving that a nationwide network of shared computer resources was not
+    only possible but already functioning. This demonstration is widely credited with convincing the
+    broader scientific and engineering communities of the ARPANET's transformative potential 
+    <sub><a href="#footnote7">7</a></sub>.
+    </p>
 
 
-    
+
 
 
 
     <script src="" async defer></script>
 </body>
+
+<div style="text-align: right; margin-right: 40px; margin-top: 20px;">
+    <a href="mattPage.html" style="font-size: 1.2em; text-decoration: none;">
+        How the Internet was born from the ARPANET →
+    </a>
+</div>
 <hr style="margin-top:40px;">
 
 
@@ -87,10 +133,22 @@
 
 <p id="footnote2">
     2. <a href="worksCited.html#abbate" target="_blank">Abbate 44</a>
-
+</p>
 <p id="footnote3">
     3.<a href="worksCited.html#abbate" target="_blank">Abbate 45</a>
+</p>
 <p id="footnote4">
     4. <a href="worksCited.html#abbate" target="_blank">Abbate 46</a>
+</p>
+<p id="footnote5">
+    5. <a href="worksCited.html#abbate" target="_blank">Abbate 48</a>
+</p>
+<p id="footnote6">
+    6. <a href="worksCited.html#abbate" target="_blank">Abbate 61</a>
+</p>
+
+<p id="footnote7">
+    7. <a href="worksCited.html#hillstrom" target="_blank">Hillstrom 18</a>
+</p>
 
 </html>
